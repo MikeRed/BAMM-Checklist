@@ -93,8 +93,11 @@ body {
 	height: auto;
 }
 
-.week-2-a img {
+.week-2-e img {
+	/*super erin image*/
 	height: 180px;
 	width: 180px;
 	margin-left: 10px;
+	border: 8px solid white;
+	border-radius: 15px;
 }
