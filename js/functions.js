@@ -1,3 +1,5 @@
+
+// Opens up the week which is currently being checked off on page load
 $(document).ready(function(){
 	var sections = document.getElementsByClassName('week-section');
 	var position = getCookie();
@@ -14,6 +16,7 @@ $(document).ready(function(){
 	$(inner).collapse('toggle');
 });
 
+// Toggles the week dropdown for the week with the given ID
 function tgl(id,e){
 	if(!e) e = window.event;
 	target = e.target||e.srcElement;
@@ -23,6 +26,10 @@ function tgl(id,e){
 	}
 };
 
+// Set a class to the checkboxes to label them
+// Set the onclick to toggle the checkmarks
+// * Only the last one can be unchecked
+// * Only the first unchecked checkmark can be checked
 $(document).ready(function(){
 	var x = document.getElementsByClassName("checkmark");
 	for(var i = 0; i < x.length; i++){
@@ -58,6 +65,7 @@ $(document).ready(function(){
 	}
 });
 
+// When the page loads, auto-check all the checkmarks that have been previously checked off based on the cookie named 'progress'
 $(document).ready(function(){
 	var x = document.getElementsByClassName("checkmark");
 	var count = getCookie();
@@ -68,12 +76,14 @@ $(document).ready(function(){
 	}
 });
 
+// This saves a cookie to the browser that stores the number of checkmarks currently checked under the name 'progress'
 function generateCookie(checkNum){
 	var time = new Date();
 	time.setFullYear(time.getFullYear() + 5);
 	document.cookie = "progress="+checkNum+"; expires="+time.toUTCString();
 }
 
+// This retrieves the cookie with the 'progress' name, and returns the number
 function getCookie(){
 	var cookies = document.cookie.split(';');
 	for(var i=0;i<cookies.length;i++){
