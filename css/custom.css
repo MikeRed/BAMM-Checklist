@@ -119,6 +119,15 @@ a:hover { color: white; }
 	overflow: auto;
 }
 
+.btn-blue {
+	border-radius: 15px;
+	margin: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	display:block;
+	height: auto;
+	overflow: auto;
+}
 
 #week-1-a img {
 	height: 180px;
