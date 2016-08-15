@@ -14,6 +14,9 @@ a:hover { color: white; }
 	background-color: #42c4df;
 	border-color: #42c4df; 
 	font-size: 16px;
+	padding: 10px;
+	margin: 5px;
+	
 }
 
 .btn-blue:hover, .btn-blue:active, .btn-blue:focus {
@@ -104,11 +107,9 @@ a:hover { color: white; }
 .week-1-a img {
 	height: 180px;
 	width: 180px;
-	background-color: black;
-	float: right;
-	padding: 10px;
+	background-color: #fff;
+	padding: 4px;
 	border-radius: 15px;
-	margin-left: 10px;
 }
 
 .week-1-e img {
@@ -116,7 +117,13 @@ a:hover { color: white; }
 	width: 40px;
 	height: auto;
 }
-
+.week-2-a img{ 
+	height: 180px;
+	width: 180px;
+	background-color: #fff;
+	padding: 4px;
+	border-radius: 15px;
+}
 .week-2-e img {
 	/*super erin image*/
 	height: 180px;
